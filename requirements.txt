@@ -1,0 +1,15 @@
+tensorflow
+tensorflow-datasets
+jax
+jaxlib
+equinox
+optimistix
+matplotlib
+wandb
+numpy
+scipy
+tqdm
+loguru
+optax
+jaxtyping
+Pillow

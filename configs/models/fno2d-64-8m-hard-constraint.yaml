@@ -1,0 +1,12 @@
+model: "fno2d"
+modes1: [8, 8, 8, 8, 8]
+modes2: [8, 8, 8, 8, 8]
+layers: [32, 64, 64, 64, 64, 64]
+activate_last_layer: True
+fc_dim: 128
+out_dim: 16
+activation: "gelu"
+constraint:
+  system: "levenbergmarquardt"
+  num_sampled_points: 20000
+  use_jaxopt: false

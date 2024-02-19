@@ -1,0 +1,16 @@
+num_epochs: 10
+max_steps: 4050
+optimizer:
+  name: "adam"
+  learning_rate: 0.001
+  scheduler: 'ds'
+seed: 3
+save_checkpoints: true
+jit: true
+ic_loss_weight: 1.
+bc_loss_weight: 1.
+pde_loss_weight: 1.
+interior_loss_weight: 0.
+icbc_loss_normalize: True
+data_loss_normalize: True
+log_every_n_steps: 100

@@ -1,0 +1,12 @@
+model: "fno3d"
+modes1: [12, 12, 12, 12, 12, 12, 12, 12]
+modes2: [12, 12, 12, 12, 12, 12, 12, 12]
+modes3: [12, 12, 12, 12, 12, 12, 12, 12]
+layers: [64, 64, 64, 64, 64, 64, 64, 64, 64]
+activate_last_layer: False
+mollifier: 0.005
+fc_dim: 256
+out_dim: 1
+activation: "gelu"
+constraint:
+  system: "none"
