@@ -59,3 +59,16 @@ The validation loop can be run through ```test.py```. Ex:
 ```bash
 python3 test.py [WANDB_RUNID] [WANDB_PROJECT] --batch_size=[BATCH]
 ```
+
+## Citation
+If you found this repository helpful, consider citing our work:
+
+```
+@inproceedings{chalapathi2024scaling,
+  title={Scaling physics-informed hard constraints with mixture-of-experts},
+  author={Nithin Chalapathi and Yiheng Du and Aditi S. Krishnapriyan},
+  booktitle={The Twelfth International Conference on Learning Representations},
+  year={2024},
+  url={https://openreview.net/forum?id=u3dX2CEIZb}
+}
+```
