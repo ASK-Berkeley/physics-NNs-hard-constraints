@@ -25,6 +25,14 @@ pip install -e . # That's it!
 
 The code may be accessed with traditional import statements (```from neptune.geometry import *```) or with our driver script ```train.py``` and ```server_train.py```.
 
+## Training Data
+
+The training and validation data for both Navier Stokes and diffusion sorption are stored on Google Drive. The data is stored as `tfrecords`.
+
+[Navier Stokes 2D data](https://drive.google.com/drive/folders/18LDsJCNU0X_NL5aKe98vPuz9EDUtpETG?usp=sharing)
+
+[Diffusion sorption 1D Data](https://drive.google.com/drive/folders/1L5MQ8Ev9gw9dU9VCIILRjOhj3MDMenTc?usp=sharing) from [PDEBench](https://github.com/pdebench/PDEBench) converted into TFRecords.
+
 ## Running
 
 ```train.py``` provides the main driver script for running experiments. By default, all logging is done through wandb; make sure to login with ```wandb login```. Note that any runs with a constraint solver needs FP64 (i.e., ```JAX_ENABLE_X64=True``` environment variable). If you run into memory issues, setting ```XLA_PYTHON_CLIENT_MEM_FRACTION=.90``` can help. You must also change the ```data_root``` variable in ```configs/datasets/diffusion-sorption.yaml``` and ```configs/datasets/navier-stokes.yaml```.
